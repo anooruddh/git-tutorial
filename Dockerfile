@@ -1,3 +1,4 @@
 FROM tomcat:8
 # Take the war and copy to webapps of tomcat
-COPY target/*.war /usr/local/tomcat/webapps/
+# ANooruddh - This is what i added before stash
+COPY /opt/jenkins/workspace/docker-build/target/*.war /usr/local/tomcat/webapps/
